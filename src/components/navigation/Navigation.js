@@ -1,27 +1,27 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import './Navigation.css';
 
-const Navigation = (props) =>{
-  const style = {
-    borderBottom:'2px solid white',
-  }
+const Navigation = () =>{
   return(
     <div className="nav-wrapper">
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 mr-auto">Nishant Rao</span>
-        <div id="navbarSupportedContent">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a className="navbar-brand mb-0 mr-auto" href="/">NISHANT RAO</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="navbar navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" activeStyle={style} to="/">Home</Link>
+              <a className="nav-link"  href="/">Home</a>
             </li>
             <li className="nav-item" >
-              <NavLink className="nav-link" activeStyle={style} to="/Skills">Skills</NavLink>
+              <a className="nav-link"  href="/Skills">Skills</a>
             </li>
             <li className="nav-item" >
-              <NavLink className="nav-link" activeStyle={style} to="/Work">Work</NavLink>
+              <a className="nav-link"  href="/Work">Work</a>
             </li>
             <li className="nav-item" >
-              <NavLink className="nav-link" activeStyle={style} to="/Resume">Resume</NavLink>
+              <a className="nav-link"  href="/Resume">Resume</a>
             </li>
           </ul>
         </div>
