@@ -12,16 +12,16 @@ const Navigation = () =>{
         <div className="navbar navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link"  href="/">Home</a>
+              <a className="nav-link"  href="/"><i class="fas fa-home" data-toggle="tooltip" data-placement="top" title="Home"></i></a>
             </li>
             <li className="nav-item" >
-              <a className="nav-link"  href="/Skills">Skills</a>
+              <a className="nav-link"  href="/Skills"><i class="fas fa-cogs" data-toggle="tooltip" data-placement="top" title="Skills"></i></a>
             </li>
             <li className="nav-item" >
-              <a className="nav-link"  href="/Work">Work</a>
+              <a className="nav-link"  href="/Work"><i class="fas fa-laptop-code" data-toggle="tooltip" data-placement="top" title="Work"></i></a>
             </li>
             <li className="nav-item" >
-              <a className="nav-link"  href="/Resume">Resume</a>
+              <a className="nav-link"  href="/Resume"><i class="fas fa-file-pdf" data-toggle="tooltip" data-placement="top" title="Resume"></i></a>
             </li>
           </ul>
         </div>
