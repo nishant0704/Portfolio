@@ -4,7 +4,7 @@ import './Navigation.css';
 const Navigation = () =>{
   return(
     <div className="nav-wrapper">
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark pb-0" style={{backgroundColor:'transparent'}}>
         <a className="navbar-brand mb-0 mr-auto" href="/">NISHANT RAO</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>

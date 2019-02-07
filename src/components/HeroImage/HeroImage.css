@@ -1,0 +1,6 @@
+.pic-container{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 3px 3px black;
+}
