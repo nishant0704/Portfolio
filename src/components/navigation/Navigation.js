@@ -6,7 +6,7 @@ const Navigation = () =>{
   return(
     <div className="nav-wrapper">
       <nav className="navbar navbar-expand-lg navbar-dark pb-0" style={{backgroundColor:'transparent'}}>
-        <a className="navbar-brand" href="/">Nishant Rao</a>
+        <Link className="navbar-brand" to="/">Nishant Rao</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
           aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@ const Navigation = () =>{
       <div className="collapse navbar-collapse" id="basicExampleNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link"  href="/"><i className="fas fa-home" data-toggle="tooltip" data-placement="top" title="Home"></i></a>
+            <Link className="nav-link"  to="/"><i className="fas fa-home" data-toggle="tooltip" data-placement="top" title="Home"></i></Link>
           </li>
           <li className="nav-item" >
             <Link className="nav-link"  to="/Skills"><i className="fas fa-cogs" data-toggle="tooltip" data-placement="top" title="Skills"></i></Link>
