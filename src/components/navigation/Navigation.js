@@ -20,7 +20,7 @@ const Navigation = () =>{
             <Link className="nav-link"  to="/Skills"><i className="fas fa-cogs" data-toggle="tooltip" data-placement="top" title="Skills"></i></Link>
           </li>
           <li className="nav-item" >
-            <a className="nav-link"  href="/Work"><i className="fas fa-laptop-code" data-toggle="tooltip" data-placement="top" title="Work"></i></a>
+            <Link className="nav-link"  to="/Projects"><i className="fas fa-laptop-code" data-toggle="tooltip" data-placement="top" title="Work"></i></Link>
           </li>
           <li className="nav-item" >
             <a className="nav-link"  href="/Resume"><i className="fas fa-file-pdf" data-toggle="tooltip" data-placement="top" title="Resume"></i></a>
