@@ -1,4 +1,13 @@
 import React,{Component} from 'react';
+import HTML5 from '../../../Images/HTML5.png';
+import CSS3 from '../../../Images/CSS3.png';
+import JS from '../../../Images/Javascript.png';
+import Bootstrap from '../../../Images/bootstrap.png';
+import MDB from '../../../Images/MDB.png';
+import Reactjs from '../../../Images/React.png';
+import Git from '../../../Images/Git.png';
+import Atom from '../../../Images/Atom.png';
+import DevTools from '../../../Images/Chrome-Dev-Tools.png';
 import './Skills.css';
 
 class Skills extends Component{
@@ -6,56 +15,56 @@ class Skills extends Component{
     super(props);
     this.state={
       skills:[
-        {id:2,image:'https://seeklogo.com/images/H/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png',name:'HTML'},
-        {id:3,image:'https://vignette.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest?cb=20130422012035',name:'CSS'},
-        {id:4,image:'https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png',name:'JavaScript'},
+        {id:1,image:HTML5,name:'HTML'},
+        {id:2,image:CSS3,name:'CSS'},
+        {id:3,image:JS,name:'JavaScript'},
       ],
       FrameWorks:[
-        {id:6,image:'https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png',name:'Bootstrap'},
-        {id:7,image:'https://avatars3.githubusercontent.com/u/20553039?s=460&v=4',name:'MaterialDesignBootstrap'},
-        {id:8,image:'https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png',name:'React'},
+        {id:4,image:Bootstrap,name:'Bootstrap'},
+        {id:5,image:MDB,name:'MaterialDesignBootstrap'},
+        {id:6,image:Reactjs,name:'React'},
       ],
       Tools:[
-        {id:10,image:'https://seeklogo.com/images/G/git-logo-CD8D6F1C09-seeklogo.com.png',name:'Git'},
-        {id:11,image:'https://seeklogo.com/images/A/atom-logo-19BD90FF87-seeklogo.com.png',name:'Atom'},
-        {id:12,image:'https://seeklogo.com/images/C/chrome-logo-D5FECB59EF-seeklogo.com.png',name:'DeveloperTools'}
+        {id:7,image:Git,name:'Git'},
+        {id:8,image:Atom,name:'Atom'},
+        {id:9,image:DevTools,name:'ChromeDeveloperTools'}
       ]
     }
   }
   render(){
     return(
       <div>
-        <h3>Skills</h3>
+        <h3 className="mt-2">Skills</h3>
         <div className="d-flex flex-wrap justify-content-center align-items-center">
         {
           this.state.skills.map( skill => {
             return(
-              <div className="skills-container" key={skill.id}>
-                  <img src={skill.image} alt="dumy" className="image-wrapper card p-relative"/>
+              <div className="skills-container card bg-dark mr-3 ml-3" key={skill.id}>
+                  <img src={skill.image} alt="dumy" className="image-wrapper mt-2 mb-2"/>
               </div>
             );
           })
         }
         </div>
-        <h3>Frameworks</h3>
+        <h3 className="mt-2">Frameworks</h3>
         <div className="d-flex flex-wrap justify-content-center align-items-center">
         {
           this.state.FrameWorks.map( framework => {
             return(
-              <div className="skills-container" key={framework.id}>
-                  <img src={framework.image} alt="dumy" className="image-wrapper card p-relative"/>
+              <div className="skills-container card bg-dark mr-3 ml-3" key={framework.id}>
+                  <img src={framework.image} alt="dumy" className="image-wrapper"/>
               </div>
             );
           })
         }
         </div>
-        <h3>Tools & Technologies</h3>
+        <h3 className="mt-2">Tools & Technologies</h3>
         <div className="d-flex flex-wrap justify-content-center align-items-center">
         {
           this.state.Tools.map( tool => {
             return(
-              <div className="skills-container" key={tool.id}>
-                  <img src={tool.image} alt="dumy" className="image-wrapper card p-relative"/>
+              <div className="skills-container card bg-dark mr-3 ml-3" key={tool.id}>
+                  <img src={tool.image} alt="dumy" className="image-wrapper"/>
               </div>
             );
           })
