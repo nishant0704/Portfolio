@@ -4,7 +4,7 @@ import Nishant from '../../Images/Nishant3.jpg'
 
 const heroimage = () => {
   return (
-    <div style={{height:'88vh',width:'100%'}} className="img-fluid">
+    <div style={{height:'83vh',width:'100%'}} className="img-fluid">
       <div  className="pt-3">
         <h1 className="animated fadeInUp delay-1s"><strong>Hi There! </strong></h1>
         <h3 className="animated fadeInUp delay-2s"><strong>I am Nishant Rao.</strong></h3>
