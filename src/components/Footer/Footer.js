@@ -7,7 +7,7 @@ const footer = () => {
         <div className="container text-center text-md-left">
           <div className="row d-flex align-items-center">
             <div className="col-md-7 col-lg-8">
-              <p className="text-center text-md-left">© 2019 Nishant Rao</p>
+              <p className="text-center text-md-left">©Nishant Rao 2019</p>
             </div>
             <div className="col-md-5 col-lg-4 ml-lg-0">
               <div className="text-center text-md-right">
@@ -23,7 +23,7 @@ const footer = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a className="btn-floating btn-git mx-1" href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                    <a className="btn-floating btn-git mx-1" href="https://github.com/nishant0704" target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-github"></i>
                     </a>
                   </li>
