@@ -15,7 +15,7 @@ class Projects extends Component{
         {
           id:2,
           title:'ColorGuess',
-          description:'A Javascript application focussing on DOM functionalties which randomly generates color and each time a wrong color is picked options are reduced to pick from ,upon selecting the correct color success message is diplayed with the correct color.',
+          description:'A Javascript application focussing on DOM functionalties which randomly generates color and each time a wrong color is picked options are reduced to pick from ,game ends or can be reset upon selecting the correct color.',
           image:'',
           technology:'HTML,CSS,JavaScript,Git'
         },
@@ -41,7 +41,8 @@ class Projects extends Component{
                 <div className="card">
                   {project.title}
                   <hr/>
-                  {project.technology}
+                  Description : {project.description} <br/>
+                  <button><i class="fas fa-chevron-up"></i></button>Technology : {project.technology}
                 </div>
               </div>
             );
