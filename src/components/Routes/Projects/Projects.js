@@ -26,8 +26,15 @@ class Projects extends Component{
           image:'',
           technology:'JavaScript,CSS,React,MaterialDesignBootstrap,Git'
         },
-      ]
+      ],
+      clicked:false
     }
+  }
+
+  toggle(e,index){
+    this.setState( state => ({
+      clicked:!state.clicked
+    }));
   }
   render(){
     return(
@@ -35,14 +42,17 @@ class Projects extends Component{
         <h2>My Projects</h2>
         <div className="d-flex flex-wrap justify-content-center">
         {
-          this.state.projects.map( project =>{
+          this.state.projects.map( (project,index) =>{
             return(
               <div key={project.id} style={{width:'40%'}}>
                 <div className="card">
                   {project.title}
                   <hr/>
                   Description : {project.description} <br/>
-                  <button><i class="fas fa-chevron-up"></i></button>Technology : {project.technology}
+                  <button onClick={(e,index)=>this.toggle(e,index)}>
+                  {this.state.clicked ? <i class="fas fa-chevron-down"></i> : <i class="fas fa-chevron-up"></i>}
+                  </button>
+                  Technology : {project.technology}
                 </div>
               </div>
             );
