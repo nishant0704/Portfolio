@@ -31,9 +31,9 @@ class Projects extends Component{
     }
   }
 
-  toggle(e,index){
+  toggle(id){
     this.setState( state => ({
-      clicked:!state.clicked
+      clicked: id === state.clicked ? null : id
     }));
   }
   render(){
@@ -42,17 +42,17 @@ class Projects extends Component{
         <h2>My Projects</h2>
         <div className="d-flex flex-wrap justify-content-center">
         {
-          this.state.projects.map( (project,index) =>{
+          this.state.projects.map( (project, i) =>{
             return(
-              <div key={project.id} style={{width:'40%'}}>
+              <div key={i} style={{width:'40%'}}>
                 <div className="card">
                   {project.title}
                   <hr/>
                   Description : {project.description} <br/>
-                  <button onClick={(e,index)=>this.toggle(e,index)}>
-                  {this.state.clicked ? <i class="fas fa-chevron-down"></i> : <i class="fas fa-chevron-up"></i>}
+                  <button onClick={() => this.toggle(project.id)}>
+                  {this.state.clicked === project.id ? <i class="fas fa-chevron-up"></i> : <i class="fas fa-chevron-down"></i>}
                   </button>
-                  Technology : {project.technology}
+                  {this.state.clicked === project.id ? project.technology : ''}
                 </div>
               </div>
             );
