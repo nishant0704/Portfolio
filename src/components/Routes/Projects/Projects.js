@@ -7,24 +7,38 @@ class Projects extends Component{
       projects:[
         {
           id:1,
-          title:'Calculator',
-          description:'A Simple Javascript Calculator application demonstrating all the functionalities of a normal Calculator.',
+          title:'ColorGuess',
+          description:'A Javascript application focussing on DOM properties which randomly generates color and each time a wrong color is picked options are reduced ,game ends or can be reset upon selecting the correct color.',
           image:'',
           technology:'HTML,CSS,JavaScript,Git'
         },
         {
           id:2,
-          title:'ColorGuess',
-          description:'A Javascript application focussing on DOM functionalties which randomly generates color and each time a wrong color is picked options are reduced to pick from ,game ends or can be reset upon selecting the correct color.',
-          image:'',
-          technology:'HTML,CSS,JavaScript,Git'
-        },
-        {
-          id:3,
           title:'GamesDB',
           description:'A React application focussing on displaying data dynamically of various Games and a SearchBar component to search from the available games along with a Popup feature which showcases more information. ',
           image:'',
           technology:'JavaScript,CSS,React,MaterialDesignBootstrap,Git'
+        },
+        {
+          id:3,
+          title:'BurgerMaker',
+          description:'A React application focussing on all the concepts of React where ingredients are added dynamically along with their total price and also includes routing for the checkout component of the application. ',
+          image:'',
+          technology:'JavaScript,CSS,React,React-Router,Git'
+        },
+        {
+          id:4,
+          title:'WeatherApp',
+          description:'A React application focussing on axios / async and await feature to fetch data from an API and render dynamically, Live weather and additional data is displayed for the city searched. ',
+          image:'',
+          technology:'JavaScript,CSS,React,Axios,Bootstrap,Git'
+        },
+        {
+          id:5,
+          title:'Calculator',
+          description:'A Simple Javascript Calculator application demonstrating all the functionalities of a normal Calculator.',
+          image:'',
+          technology:'HTML,CSS,JavaScript,Git'
         },
       ],
       clicked:false
@@ -33,7 +47,7 @@ class Projects extends Component{
 
   toggle(id){
     this.setState( state => ({
-      clicked: id === state.clicked ? null : id
+      clicked: id === state.clicked ? '' : id
     }));
   }
   render(){
@@ -45,12 +59,12 @@ class Projects extends Component{
           this.state.projects.map( (project, i) =>{
             return(
               <div key={i} style={{width:'40%'}}>
-                <div className="card">
+                <div className="card m-3">
                   {project.title}
                   <hr/>
                   Description : {project.description} <br/>
-                  <button onClick={() => this.toggle(project.id)}>
-                  {this.state.clicked === project.id ? <i class="fas fa-chevron-up"></i> : <i class="fas fa-chevron-down"></i>}
+                  <button style={{width:'10%',alignSelf:'center',fontSize:'20px',border:'none',outline:'none',backgroundColor:'transparent',cursor:'pointer'}} onClick={() => this.toggle(project.id)}>
+                  {this.state.clicked === project.id ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
                   </button>
                   {this.state.clicked === project.id ? project.technology : ''}
                 </div>
