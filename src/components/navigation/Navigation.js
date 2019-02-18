@@ -1,8 +1,12 @@
-import React from 'react';
+import React ,{Component} from 'react';
 import {Link} from 'react-router-dom';
 import './Navigation.css';
 
-const Navigation = () =>{
+class Navigation extends Component{
+  componentDidMount(){
+    window.$('[data-toggle="tooltip"]').tooltip();
+  }
+  render(){
   return(
     <div className="nav-wrapper">
       <nav className="navbar navbar-expand-lg navbar-dark pb-0" style={{backgroundColor:'transparent'}}>
@@ -33,6 +37,7 @@ const Navigation = () =>{
       </nav>
     </div>
   );
+ }
 }
 
 export default Navigation;

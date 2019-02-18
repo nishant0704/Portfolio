@@ -45,6 +45,10 @@ class Projects extends Component{
     }
   }
 
+  componentDidMount(){
+    window.$('[data-toggle="tooltip"]').tooltip();
+  }
+
   toggle(id){
     this.setState( state => ({
       clicked: id === state.clicked ? '' : id
@@ -64,7 +68,7 @@ class Projects extends Component{
                   <hr/>
                   Description : {project.description} <br/>
                   <button style={{width:'10%',alignSelf:'center',fontSize:'20px',border:'none',outline:'none',backgroundColor:'transparent',cursor:'pointer'}} onClick={() => this.toggle(project.id)}>
-                  {this.state.clicked === project.id ? <i className="fas fa-chevron-up" data-toggle="tooltip" data-placement="bottom" title="Technology Used"></i> : <i className="fas fa-chevron-down" data-toggle="tooltip" data-placement="bottom" title="Technology Used"></i>}
+                  {this.state.clicked === project.id ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down" data-toggle="tooltip" data-placement="right" title="Technology Used"></i>}
                   </button>
                   {this.state.clicked === project.id  ? project.technology : ''}
                 </div>
