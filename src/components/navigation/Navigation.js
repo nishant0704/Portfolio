@@ -23,6 +23,9 @@ const Navigation = () =>{
             <Link className="nav-link"  to="/Projects"><i className="fas fa-laptop-code" data-toggle="tooltip" data-placement="top" title="Work"></i></Link>
           </li>
           <li className="nav-item" >
+            <Link className="nav-link"  to="/Projects"><i className="far fa-user-circle" data-toggle="tooltip" data-placement="top" title="About"></i></Link>
+          </li>
+          <li className="nav-item" >
             <a className="nav-link"  href="/Resume"><i className="fas fa-file-pdf" data-toggle="tooltip" data-placement="top" title="Resume"></i></a>
           </li>
         </ul>
