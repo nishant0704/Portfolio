@@ -9,7 +9,7 @@ class Navigation extends Component{
   render(){
   return(
     <div className="nav-wrapper">
-      <nav className="navbar navbar-expand-lg navbar-dark pb-0" style={{backgroundColor:'transparent'}}>
+      <nav className="navbar navbar-expand-lg navbar-dark pb-0 fixed-top" style={{backgroundColor:'transparent'}}>
         <Link className="navbar-brand" to="/">Nishant Rao</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
           aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">

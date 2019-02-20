@@ -39,8 +39,8 @@ class Skills extends Component{
         {
           this.state.skills.map( skill => {
             return(
-              <div className="skills-container card bg-dark mr-3 ml-3" key={skill.id}>
-                  <img src={skill.image} alt="dumy" className="image-wrapper mt-2 mb-2"/>
+              <div style={{height:'260px'}} className="skills-container card bg-dark mr-3 ml-3" key={skill.id}>
+                  <img style={{height:'220px'}} src={skill.image} alt="dumy" className="image-wrapper mt-2 mb-2"/>
               </div>
             );
           })
