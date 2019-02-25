@@ -3,7 +3,7 @@ import './Footer.css';
 
 const footer = () => {
   return(
-    <footer className="page-footer bg-transparent pt-4">
+    <footer className="page-footer bg-transparent pt-4 black-text">
         <div className="container text-center text-md-left">
           <div className="row d-flex align-items-center">
             <div className="col-md-7 col-lg-8">
@@ -14,22 +14,22 @@ const footer = () => {
                 <ul className="list-unstyled list-inline">
                   <li className="list-inline-item">
                     <a className="btn-floating btn-fb mx-1" href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
-                      <i className="fab fa-facebook-f"></i>
+                      <i className="fab fa-facebook-f black-text"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a className="btn-floating btn-ins mx-1" href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                      <i className="fab fa-instagram"></i>
+                      <i className="fab fa-instagram black-text"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a className="btn-floating btn-git mx-1" href="https://github.com/nishant0704" target="_blank" rel="noopener noreferrer">
-                      <i className="fab fa-github"></i>
+                      <i className="fab fa-github black-text"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a className="btn-floating btn-li mx-1" href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                      <i className="fab fa-linkedin-in"></i>
+                      <i className="fab fa-linkedin-in black-text"></i>
                     </a>
                   </li>
                 </ul>

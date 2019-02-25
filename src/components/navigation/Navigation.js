@@ -1,5 +1,5 @@
 import React ,{Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import './Navigation.css';
 
 class Navigation extends Component{
@@ -9,7 +9,7 @@ class Navigation extends Component{
   render(){
   return(
     <div className="nav-wrapper">
-      <nav className="navbar navbar-expand-lg navbar-dark pb-0 fixed-top" style={{backgroundColor:'transparent'}}>
+      <nav className="navbar navbar-expand-lg navbar-light pb-0" style={{boxShadow:'none',backgroundColor:'transparent'}}>
         <Link className="navbar-brand" to="/">Nishant Rao</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
           aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,16 +18,16 @@ class Navigation extends Component{
       <div className="collapse navbar-collapse" id="basicExampleNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="nav-link"  to="/"><i className="fas fa-home" data-toggle="tooltip" data-placement="top" title="Home"></i></Link>
+            <NavLink className="nav-link"  exact to="/" activeStyle={{borderBottom:'2px solid orange'}}><i className="fas fa-home" data-toggle="tooltip" data-placement="top" title="Home"></i></NavLink>
           </li>
           <li className="nav-item" >
-            <Link className="nav-link"  to="/Skills"><i className="fas fa-cogs" data-toggle="tooltip" data-placement="top" title="Skills"></i></Link>
+            <NavLink className="nav-link"  to="/Skills" activeStyle={{borderBottom:'2px solid orange'}}><i className="fas fa-cogs" data-toggle="tooltip" data-placement="top" title="Skills"></i></NavLink>
           </li>
           <li className="nav-item" >
-            <Link className="nav-link"  to="/Projects"><i className="fas fa-laptop-code" data-toggle="tooltip" data-placement="top" title="Work"></i></Link>
+            <NavLink className="nav-link"  to="/Projects" activeStyle={{borderBottom:'2px solid orange'}}><i className="fas fa-laptop-code" data-toggle="tooltip" data-placement="top" title="Work"></i></NavLink>
           </li>
           <li className="nav-item" >
-            <Link className="nav-link"  to="/Projects"><i className="far fa-user-circle" data-toggle="tooltip" data-placement="top" title="About"></i></Link>
+            <NavLink className="nav-link"  to="/Projects" activeStyle={{borderBottom:'2px solid orange'}}><i className="far fa-user-circle" data-toggle="tooltip" data-placement="top" title="About"></i></NavLink>
           </li>
           <li className="nav-item" >
             <a className="nav-link"  href="/Resume"><i className="fas fa-file-pdf" data-toggle="tooltip" data-placement="top" title="Resume"></i></a>
