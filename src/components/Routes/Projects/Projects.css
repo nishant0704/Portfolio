@@ -1,0 +1,16 @@
+/* .project-card-wrapper{
+  width:40%;
+} */
+
+
+@media only screen and (min-width:770px){
+  .project-card-wrapper{
+    width:40%;
+  }
+}
+
+@media only screen and (min-width:426px) and (max-width:768px){
+  .project-card-wrapper{
+    width:75%;
+  }
+}

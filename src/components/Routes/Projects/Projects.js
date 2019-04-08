@@ -4,6 +4,9 @@ import Game from '../../../Images/GameDB.png';
 import Burger from '../../../Images/Burger-Builder.png';
 import Weather from '../../../Images/weather-data.png';
 import Calculator from '../../../Images/Calculator.png';
+import './Projects.css';
+
+
 class Projects extends Component{
   constructor(props){
     super(props);
@@ -66,7 +69,7 @@ class Projects extends Component{
         {
           this.state.projects.map( (project, i) =>{
             return(
-              <div key={i} className="project-card-wrapper" style={{width:'40%'}}>
+              <div key={i} className="project-card-wrapper">
                 <div className="card m-3 bg-dark text-light">
                   <img className="img-thumbnail bg-dark" style={{width:'auto',height:'280px'}}src={project.image} alt="respective ss"/>
                   <p className="mt-2 lead mb-2">{project.title}</p>
