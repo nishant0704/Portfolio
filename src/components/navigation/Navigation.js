@@ -18,19 +18,19 @@ class Navigation extends Component{
       <div className="collapse navbar-collapse" id="basicExampleNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <NavLink className="nav-link"  exact to="/" activeStyle={{borderBottom:'2px solid orange'}}><i className="fas fa-home" data-toggle="tooltip" data-placement="top" title="Home"></i></NavLink>
+            <NavLink className="nav-link"  exact to="/" activeStyle={{borderBottom:'2px solid #FF9933'}}><i className="fas fa-home" data-toggle="tooltip" data-placement="top" title="Home"></i></NavLink>
           </li>
           <li className="nav-item" >
-            <NavLink className="nav-link"  to="/Skills" activeStyle={{borderBottom:'2px solid orange'}}><i className="fas fa-cogs" data-toggle="tooltip" data-placement="top" title="Skills"></i></NavLink>
+            <NavLink className="nav-link"  to="/Skills" activeStyle={{borderBottom:'2px solid #FF9933'}}><i className="fas fa-cogs" data-toggle="tooltip" data-placement="top" title="Skills"></i></NavLink>
           </li>
           <li className="nav-item" >
-            <NavLink className="nav-link"  to="/Projects" activeStyle={{borderBottom:'2px solid orange'}}><i className="fas fa-laptop-code" data-toggle="tooltip" data-placement="top" title="Work"></i></NavLink>
+            <NavLink className="nav-link"  to="/Projects" activeStyle={{borderBottom:'2px solid #FF9933'}}><i className="fas fa-laptop-code" data-toggle="tooltip" data-placement="top" title="Work"></i></NavLink>
           </li>
           {/*<li className="nav-item" >
             <NavLink className="nav-link"  to="/Projects" activeStyle={{borderBottom:'2px solid orange'}}><i className="far fa-user-circle" data-toggle="tooltip" data-placement="top" title="About"></i></NavLink>
           </li>*/}
           <li className="nav-item" >
-            <a className="nav-link"  href="/Resume"><i className="fas fa-file-pdf" data-toggle="tooltip" data-placement="top" title="Resume"></i></a>
+            <a className="nav-link"  href="https:www.google.com" target="blank"><i className="fas fa-file-pdf" data-toggle="tooltip" data-placement="top" title="Resume"></i></a>
           </li>
         </ul>
       </div>

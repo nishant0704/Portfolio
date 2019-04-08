@@ -21,50 +21,59 @@ class Skills extends Component{
       ],
       FrameWorks:[
         {id:4,image:Bootstrap,name:'Bootstrap'},
-        {id:5,image:MDB,name:'MaterialDesignBootstrap'},
+        {id:5,image:MDB,name:'Material Design Bootstrap'},
         {id:6,image:Reactjs,name:'React'},
       ],
       Tools:[
         {id:7,image:Git,name:'Git'},
         {id:8,image:Atom,name:'Atom'},
-        {id:9,image:DevTools,name:'ChromeDeveloperTools'}
+        {id:9,image:DevTools,name:'Chrome Developer Tools'}
       ]
     }
   }
   render(){
     return(
-      <div>
+      <div className="animated fadeInUp">
         <h3 className="mt-2">Skills</h3>
         <div className="d-flex flex-wrap justify-content-center align-items-center">
         {
           this.state.skills.map( skill => {
             return(
-              <div className="skills-container card bg-dark mr-3 ml-3 mt-2 mb-2" key={skill.id}>
+              <div>
+                <div className="skills-container card bg-dark mr-3 ml-3 mt-2 mb-2" key={skill.id}>
                   <img style={{height:'200px'}} src={skill.image} alt="dumy" className="image-wrapper my-auto"/>
+                </div>
+                <div className="skill-name-wrapper card"><p className="my-auto">{skill.name}</p></div>
               </div>
             );
           })
         }
         </div>
-        <h3 className="mt-2">Frameworks</h3>
+        <h3 className="mt-3">Frameworks</h3>
         <div className="d-flex flex-wrap justify-content-center align-items-center">
         {
           this.state.FrameWorks.map( framework => {
             return(
-              <div className="skills-container card bg-dark mr-3 ml-3 mt-2 mb-2" key={framework.id}>
+              <div>
+                <div className="skills-container card bg-dark mr-3 ml-3 mt-2 mb-2" key={framework.id}>
                   <img src={framework.image} alt="dumy" className="image-wrapper my-auto"/>
+                </div>
+                <div className="skill-name-wrapper card "><p className="my-auto">{framework.name}</p></div>
               </div>
             );
           })
         }
         </div>
-        <h3 className="mt-2">Tools & Technologies</h3>
+        <h3 className="mt-3">Tools & Technologies</h3>
         <div className="d-flex flex-wrap justify-content-center align-items-center">
         {
           this.state.Tools.map( tool => {
             return(
-              <div className="skills-container card bg-dark mr-3 ml-3 mt-2 mb-2" key={tool.id}>
+              <div>
+                <div className="skills-container card bg-dark mr-3 ml-3 mt-2 mb-2" key={tool.id}>
                   <img src={tool.image} alt="dumy" className="image-wrapper my-auto"/>
+                </div>
+                <div className="skill-name-wrapper card"><p className="my-auto">{tool.name}</p></div>
               </div>
             );
           })
