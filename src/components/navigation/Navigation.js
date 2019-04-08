@@ -30,7 +30,7 @@ class Navigation extends Component{
             <NavLink className="nav-link"  to="/Projects" activeStyle={{borderBottom:'2px solid orange'}}><i className="far fa-user-circle" data-toggle="tooltip" data-placement="top" title="About"></i></NavLink>
           </li>*/}
           <li className="nav-item" >
-            <a className="nav-link"  href="https:www.google.com" target="blank"><i className="fas fa-file-pdf" data-toggle="tooltip" data-placement="top" title="Resume"></i></a>
+            <a className="nav-link"  href="https://drive.google.com/file/d/1w5VPdEtzidJoMg543mymLNeiYQQXozXS/view?usp=sharing" target="blank"><i className="fas fa-file-pdf" data-toggle="tooltip" data-placement="top" title="Resume"></i></a>
           </li>
         </ul>
       </div>
