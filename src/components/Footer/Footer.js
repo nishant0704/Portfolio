@@ -7,11 +7,11 @@ const footer = () => {
         <div className="container text-center text-md-left">
           <div className="row d-flex align-items-center">
             <div className="col-md-7 col-lg-8">
-              <p className="text-center text-md-left">©Nishant Rao 2019</p>
+              <p className="text-center text-md-left mb-1">©Nishant Rao 2019</p>
             </div>
             <div className="col-md-5 col-lg-4 ml-lg-0">
               <div className="text-center text-md-right">
-                <ul className="list-unstyled list-inline">
+                <ul className="list-unstyled list-inline mb-1">
                   <li className="list-inline-item">
                     <a className="btn-floating btn-fb mx-1" href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-facebook-f black-text"></i>
