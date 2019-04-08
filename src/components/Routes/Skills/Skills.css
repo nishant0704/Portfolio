@@ -1,4 +1,9 @@
 .image-wrapper{
-  height:180px;
   width:180px;
+}
+
+.skills-container{
+  width:240px;
+  height:225px;
+  align-items: center;
 }

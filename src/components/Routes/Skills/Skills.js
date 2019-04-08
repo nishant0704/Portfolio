@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import HTML5 from '../../../Images/HTML5.svg';
+import HTML5 from '../../../Images/HTML5.png';
 import CSS3 from '../../../Images/CSS3.png';
 import JS from '../../../Images/Javascript.png';
 import Bootstrap from '../../../Images/bootstrap.png';
@@ -39,8 +39,8 @@ class Skills extends Component{
         {
           this.state.skills.map( skill => {
             return(
-              <div style={{height:'200px'}} className="skills-container card bg-dark mr-3 ml-3" key={skill.id}>
-                  <img style={{height:'200px'}} src={skill.image} alt="dumy" className="image-wrapper mt-2 mb-2"/>
+              <div className="skills-container card bg-dark mr-3 ml-3 mt-2 mb-2" key={skill.id}>
+                  <img style={{height:'200px'}} src={skill.image} alt="dumy" className="image-wrapper my-auto"/>
               </div>
             );
           })
@@ -51,8 +51,8 @@ class Skills extends Component{
         {
           this.state.FrameWorks.map( framework => {
             return(
-              <div className="skills-container card bg-dark mr-3 ml-3" key={framework.id}>
-                  <img src={framework.image} alt="dumy" className="image-wrapper"/>
+              <div className="skills-container card bg-dark mr-3 ml-3 mt-2 mb-2" key={framework.id}>
+                  <img src={framework.image} alt="dumy" className="image-wrapper my-auto"/>
               </div>
             );
           })
@@ -63,8 +63,8 @@ class Skills extends Component{
         {
           this.state.Tools.map( tool => {
             return(
-              <div className="skills-container card bg-dark mr-3 ml-3" key={tool.id}>
-                  <img src={tool.image} alt="dumy" className="image-wrapper"/>
+              <div className="skills-container card bg-dark mr-3 ml-3 mt-2 mb-2" key={tool.id}>
+                  <img src={tool.image} alt="dumy" className="image-wrapper my-auto"/>
               </div>
             );
           })

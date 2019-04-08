@@ -82,7 +82,7 @@ class Projects extends Component{
           })
         }
        </div>
-       <div>For More Projects , Please visit my GitHub Page.</div>
+       <div>For More Projects , Please visit my <a href="https://github.com/nishant0704" style={{color:'black',textDecoration:'underline'}}><strong>GitHub</strong></a> Page.</div>
       </div>
     );
   }

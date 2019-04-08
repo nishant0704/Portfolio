@@ -26,9 +26,9 @@ class Navigation extends Component{
           <li className="nav-item" >
             <NavLink className="nav-link"  to="/Projects" activeStyle={{borderBottom:'2px solid orange'}}><i className="fas fa-laptop-code" data-toggle="tooltip" data-placement="top" title="Work"></i></NavLink>
           </li>
-          <li className="nav-item" >
+          {/*<li className="nav-item" >
             <NavLink className="nav-link"  to="/Projects" activeStyle={{borderBottom:'2px solid orange'}}><i className="far fa-user-circle" data-toggle="tooltip" data-placement="top" title="About"></i></NavLink>
-          </li>
+          </li>*/}
           <li className="nav-item" >
             <a className="nav-link"  href="/Resume"><i className="fas fa-file-pdf" data-toggle="tooltip" data-placement="top" title="Resume"></i></a>
           </li>
