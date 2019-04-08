@@ -1,1 +1,9 @@
+.footer-wrapper{
+    padding-top: 1.0rem;
+}
 
+@media only screen and (max-width:425px){
+  .footer-wrapper{
+    padding-top: 0px;
+  }
+}

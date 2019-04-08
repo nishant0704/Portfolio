@@ -3,7 +3,7 @@ import './Footer.css';
 
 const footer = () => {
   return(
-    <footer className="page-footer bg-transparent pt-2 black-text">
+    <footer className="page-footer footer-wrapper bg-transparent black-text">
         <div className="container text-center text-md-left">
           <div className="row d-flex align-items-center">
             <div className="col-md-7 col-lg-8">
