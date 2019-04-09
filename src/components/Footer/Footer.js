@@ -28,7 +28,7 @@ const footer = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a className="btn-floating btn-li mx-1" href="www.linkedin.com/in/nishant-rao-a681679b" target="_blank" rel="noopener noreferrer">
+                    <a className="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/nishant-rao-a681679b" target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-linkedin-in black-text"></i>
                     </a>
                   </li>
