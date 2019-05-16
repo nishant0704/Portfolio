@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/React.25e63889.png"
   },
   {
-    "revision": "ecd184f919bb1b7b9fbc",
-    "url": "/static/css/main.6116a6d5.chunk.css"
+    "revision": "74bfcf8fc1b8c8c100ab",
+    "url": "/static/css/main.8941fea6.chunk.css"
   },
   {
-    "revision": "87736136e4f60cb28804",
-    "url": "/static/js/1.87736136.chunk.js"
+    "revision": "b70197b32b55a29eecb6",
+    "url": "/static/js/1.b70197b3.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/MDB.467a9ed9.png"
   },
   {
-    "revision": "ecd184f919bb1b7b9fbc",
-    "url": "/static/js/main.ecd184f9.chunk.js"
+    "revision": "74bfcf8fc1b8c8c100ab",
+    "url": "/static/js/main.74bfcf8f.chunk.js"
   },
   {
     "revision": "00c6e60e6f7d942826eb51df3f3958a0",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/Calculator.377ec2ae.png"
   },
   {
-    "revision": "bd6654e037954713cd641b0dc52cbca3",
+    "revision": "0b6eb434c8f0e479d8817a34979c12e8",
     "url": "/index.html"
   }
 ];

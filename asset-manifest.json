@@ -1,9 +1,9 @@
 {
-  "main.css": "/static/css/main.6116a6d5.chunk.css",
-  "main.js": "/static/js/main.ecd184f9.chunk.js",
-  "main.js.map": "/static/js/main.ecd184f9.chunk.js.map",
-  "static/js/1.87736136.chunk.js": "/static/js/1.87736136.chunk.js",
-  "static/js/1.87736136.chunk.js.map": "/static/js/1.87736136.chunk.js.map",
+  "main.css": "/static/css/main.8941fea6.chunk.css",
+  "main.js": "/static/js/main.74bfcf8f.chunk.js",
+  "main.js.map": "/static/js/main.74bfcf8f.chunk.js.map",
+  "static/js/1.b70197b3.chunk.js": "/static/js/1.b70197b3.chunk.js",
+  "static/js/1.b70197b3.chunk.js.map": "/static/js/1.b70197b3.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/weather-data.png": "/static/media/weather-data.90aa626d.png",
@@ -20,8 +20,8 @@
   "static/media/Burger-Builder.png": "/static/media/Burger-Builder.0e66069c.png",
   "static/media/HTML5.png": "/static/media/HTML5.3801cbe6.png",
   "static/media/Calculator.png": "/static/media/Calculator.377ec2ae.png",
-  "static/css/main.6116a6d5.chunk.css.map": "/static/css/main.6116a6d5.chunk.css.map",
+  "static/css/main.8941fea6.chunk.css.map": "/static/css/main.8941fea6.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.c84e033d9c75f471a5c0db194380b434.js": "/precache-manifest.c84e033d9c75f471a5c0db194380b434.js",
+  "precache-manifest.2a2c855f5e223bd6155092a1f7852bc0.js": "/precache-manifest.2a2c855f5e223bd6155092a1f7852bc0.js",
   "service-worker.js": "/service-worker.js"
 }
